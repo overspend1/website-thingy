@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiktor Development</title>
+    <!-- Preconnect to external resources for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#111216">
+</head>
+<body>
+    <!-- Loading Skeleton Overlay -->
+    <div class="skeleton-overlay" id="skeleton-overlay" aria-label="Loading" role="status">
+        <div>
+            <div class="skeleton-logo" aria-hidden="true"></div>
+            <div class="skeleton-bar"></div>
+        </div>
+    </div>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars-container"></div>
+    
+    <!-- Matrix Background -->
+    <div class="matrix-background" id="matrix-bg"></div>
+    
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <!-- Mobile Navigation Button -->
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel" id="sidebar">
+            <div class="logo-container">
+                <div style="width:100%;text-align:center;">
+                    <img src="https://avatars.githubusercontent.com/u/42137698?v=4" alt="Profile picture" class="profile-avatar float-animation" loading="lazy" />
+                    <div class="logo glow-text">Wiktor</div>
+                    <div class="subtitle" style="color:#b0b0b8;opacity:0.8;">Dev</div>
+                </div>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <a href="#about" class="nav-item">
+                        <i class="fas fa-user"></i>
+                        About Me
+                    </a>
+                    <a href="#projects" class="nav-item">
+                        <i class="fas fa-code"></i>
+                        Projects
+                    </a>
+                    <a href="#support" class="nav-item">
+                        <i class="fas fa-heart"></i>
+                        Support
+                    </a>
+                    <a href="#contact" class="nav-item">
+                        <i class="fas fa-paper-plane"></i>
+                        Connect
+                    </a>
+                    <a href="https://github.com/overspend1" target="_blank" class="nav-item">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Me Section -->
+            <section id="about" class="animate-in" style="animation-delay: 0.1s;">
+                <h2 class="glow-text">About Me</h2>
+                <div class="glass-panel about-container">
+                    <p class="about-text">
+                        Hello welcome to my page you are welcome to explore it or donate :D
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="animate-in" style="animation-delay: 0.2s; margin-top: 3rem;">
+                <h2 class="glow-text">Active Development</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3 class="card-title">Recoveries</h3>
+                        <ul class="item-list">
+                            <li class="terminal-text">Nothing yet</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">ROMs</h3>
+                        <ul class="item-list">
+                            <li class="terminal-text">Nothing yet</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Kernels</h3>
+                        <ul class="item-list">
+                            <li class="terminal-text">Nothing yet</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Support Section -->
+            <section id="support" class="animate-in" style="animation-delay: 0.4s; margin-top: 3rem;">
+                <h2 class="glow-text">Support Development</h2>
+                <div class="glass-panel">
+                    <h3>Cryptocurrency</h3>
+                    <div data-address="bc1q0pe02cq6ufzn4s3t8aeq0n8v2ztrpxzau07r7g" class="crypto-address">
+                        <span class="icon"><i class="fab fa-bitcoin"></i></span>
+                        <span class="address">bc1q0pe02cq6ufzn4s3t8aeq0n8v2ztrpxzau07r7g</span>
+                        <span class="copy-icon"><i class="fas fa-copy"></i></span>
+                    </div>
+                    <div data-address="0xAFB131fA3C7ed4A08aB2D4a5eDaf6703BAa64Af0" class="crypto-address">
+                        <span class="icon"><i class="fab fa-ethereum"></i></span>
+                        <span class="address">0xAFB131fA3C7ed4A08aB2D4a5eDaf6703BAa64Af0</span>
+                        <span class="copy-icon"><i class="fas fa-copy"></i></span>
+                    </div>
+                    <div data-address="Chq9Y2NwDUdwdWRLkJThCujiLzeRdJTBTPY8d7wwgHkK" class="crypto-address">
+                        <span class="icon"><i class="fas fa-sun"></i></span>
+                        <span class="address">Chq9Y2NwDUdwdWRLkJThCujiLzeRdJTBTPY8d7wwgHkK</span>
+                        <span class="copy-icon"><i class="fas fa-copy"></i></span>
+                    </div>
+                </div>
+                <div class="glass-panel">
+                    <h3>Other Payment Methods</h3>
+                    <div class="support-links">
+                        <a href="https://ko-fi.com/mx7111" class="neon-button"><i class="fas fa-coffee"></i> Ko-Fi</a>
+                        <a href="https://paypal.me/boalathegod" class="neon-button"><i class="fab fa-paypal"></i> PayPal</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="animate-in" style="animation-delay: 0.6s; margin-top: 3rem;">
+                <h2 class="glow-text">Connect</h2>
+                <div class="glass-panel">
+                    <a href="https://t.me/OverSpend" class="contact-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram: @OverSpend</span>
+                    </a>
+                    <a href="https://t.me/+n3Fz3ySs6uo2NmU0" class="contact-link">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Channel</span>
+                    </a>
+                    <a href="https://t.me/+CPG1_Rrx9xs2YmFk" class="contact-link">
+                        <i class="fas fa-users"></i>
+                        <span>Group</span>
+                    </a>
+                    <a href="https://instagram.com/wiktator92" class="contact-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram: @wiktator92</span>
+                    </a>
+                    <a href="#" class="contact-link" onclick="copyToClipboard('@overspend1'); showNotification('Discord username copied!'); return false;">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord: @overspend1</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- System Status -->
+    <div class="system-status">
+        <span class="status-indicator"></span>
+        <span>System Online</span>
+    </div>
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
