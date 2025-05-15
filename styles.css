@@ -132,7 +132,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--primary);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 body:not(.light) .glow-text {
@@ -141,11 +141,11 @@ body:not(.light) .glow-text {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    text-shadow: 0 0 18px rgba(255, 255, 255, 0.5), 0 0 8px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 body:not(.light) .glow-text:hover {
-    text-shadow: 0 0 24px #fff, 0 0 12px #fff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.2);
     background: linear-gradient(90deg, #fff 10%, #fff 100%);
     -webkit-background-clip: text;
 }
@@ -264,7 +264,17 @@ body.light .glow-text:hover {
     font-weight: 700;
     position: relative;
     letter-spacing: 1px;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
 }
+
+.logo.glow-text {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+body:not(.light) .logo.glow-text {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
 .logo-container .logo::before {
     content: 'Wiktor';
     position: absolute;
@@ -394,12 +404,9 @@ nav { margin-top: 2rem; }
     position: absolute; right: 1rem; opacity: 0.5; transition: opacity 0.3s ease;
 }
 .crypto-address:hover .copy-icon { opacity: 1; }
+/* Remove the old copied text style */
 .crypto-address.copied::after {
-    content: 'Copied!';
-    position: absolute;
-    right: 1rem;
-    color: var(--success);
-    animation: fade-out 2s forwards;
+    content: none;
 }
 @keyframes fade-out {
     0% { opacity: 1; }
@@ -449,6 +456,31 @@ nav { margin-top: 2rem; }
     box-shadow: 0 5px 30px #000a;
 }
 .notification.show { transform: translateY(0); }
+
+/* New copy notification - exactly like the image */
+#copy-notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(32, 33, 36, 0.95);
+    color: #fafafa;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    z-index: 2000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#copy-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .mobile-nav-toggle {
     display: flex;
     position: fixed;
