@@ -79,18 +79,18 @@ if (scrollBtn) {
     });
 }
 
-// Copy crypto address to clipboard - With better error handling
+// Copy crypto address to clipboard - Modified to use notification
 document.querySelectorAll('.crypto-address').forEach(el => {
     el.addEventListener('click', function() {
         const address = this.getAttribute('data-address');
         if (address) {
             try {
                 navigator.clipboard.writeText(address).then(() => {
-                    this.classList.add('copied');
-                    setTimeout(() => this.classList.remove('copied'), 1800);
+                    // Show notification instead of adding .copied class
+                    showNotification('Copied!');
                 }).catch(err => {
                     console.error('Could not copy text: ', err);
-                    showNotification('Failed to copy. Please try manually selecting and copying the address.');
+                    showNotification('Failed to copy');
                 });
             } catch (err) {
                 // Fallback for browsers that don't support clipboard API
@@ -101,10 +101,10 @@ document.querySelectorAll('.crypto-address').forEach(el => {
                 textarea.select();
                 try {
                     document.execCommand('copy');
-                    this.classList.add('copied');
-                    setTimeout(() => this.classList.remove('copied'), 1800);
+                    // Show notification instead of adding .copied class
+                    showNotification('Copied!');
                 } catch (e) {
-                    showNotification('Failed to copy. Please try manually selecting and copying the address.');
+                    showNotification('Failed to copy');
                 }
                 document.body.removeChild(textarea);
             }
@@ -116,6 +116,8 @@ document.querySelectorAll('.crypto-address').forEach(el => {
 function copyToClipboard(text) {
     try {
         navigator.clipboard.writeText(text);
+        showNotification('Copied!');
+        return true;
     } catch (err) {
         // Fallback
         const textarea = document.createElement('textarea');
@@ -123,19 +125,37 @@ function copyToClipboard(text) {
         textarea.style.position = 'fixed';
         document.body.appendChild(textarea);
         textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
+        try {
+            document.execCommand('copy');
+            showNotification('Copied!');
+            return true;
+        } catch (e) {
+            showNotification('Failed to copy');
+            return false;
+        } finally {
+            document.body.removeChild(textarea);
+        }
     }
 }
 
-// Notification helper function
-function showNotification(message, duration = 3000) {
-    const notification = document.getElementById('notification');
-    if (notification) {
-        notification.textContent = message;
-        notification.classList.add('show');
-        setTimeout(() => notification.classList.remove('show'), duration);
+// Simple notification function that matches the design in the image
+function showNotification(message, duration = 1800) {
+    // Check if notification element exists, if not create it
+    let notification = document.getElementById('copy-notification');
+    if (!notification) {
+        notification = document.createElement('div');
+        notification.id = 'copy-notification';
+        document.body.appendChild(notification);
     }
+    
+    // Set the message and show the notification
+    notification.textContent = message;
+    notification.classList.add('show');
+    
+    // Remove notification after duration
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, duration);
 }
 
 // Create animated stars background - Enhanced and optimized for mobile
