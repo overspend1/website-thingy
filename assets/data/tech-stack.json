@@ -1,0 +1,220 @@
+{
+  "categories": {
+    "languages": {
+      "name": "Programming Languages",
+      "color": "#ff6b6b",
+      "icon": "icon-code",
+      "techs": [
+        {
+          "name": "Python",
+          "proficiency": "Hobby Projects",
+          "experience": "Building small scripts and automation tools"
+        },
+        {
+          "name": "JavaScript",
+          "proficiency": "Learning",
+          "experience": "Frontend experiments and this portfolio"
+        },
+        {
+          "name": "Bash",
+          "proficiency": "Daily Use",
+          "experience": "System automation and server management"
+        },
+        {
+          "name": "HTML/CSS",
+          "proficiency": "Experimenting",
+          "experience": "Web design and portfolio building"
+        }
+      ]
+    },
+    "systems": {
+      "name": "Operating Systems & Tools",
+      "color": "#4ecdc4",
+      "icon": "icon-system",
+      "techs": [
+        {
+          "name": "Linux",
+          "proficiency": "Home Lab",
+          "experience": "Ubuntu/Debian servers, command line daily"
+        },
+        {
+          "name": "Windows",
+          "proficiency": "Daily Driver",
+          "experience": "Main desktop OS, PowerShell scripting"
+        },
+        {
+          "name": "Android",
+          "proficiency": "ROM Tinkering",
+          "experience": "Custom ROMs, kernel modifications"
+        },
+        {
+          "name": "Docker",
+          "proficiency": "Container Fun",
+          "experience": "Self-hosted services containerization"
+        }
+      ]
+    },
+    "webtech": {
+      "name": "Web Technologies",
+      "color": "#45b7d1",
+      "icon": "icon-web",
+      "techs": [
+        {
+          "name": "Apache",
+          "proficiency": "Home Server",
+          "experience": "Local web server for projects"
+        },
+        {
+          "name": "Nginx",
+          "proficiency": "Reverse Proxy",
+          "experience": "Load balancing for self-hosted apps"
+        },
+        {
+          "name": "Git",
+          "proficiency": "Version Control",
+          "experience": "GitHub for project management"
+        },
+        {
+          "name": "Vercel",
+          "proficiency": "Deployment",
+          "experience": "Static site hosting experiments"
+        }
+      ]
+    },
+    "databases": {
+      "name": "Data & Databases",
+      "color": "#96ceb4",
+      "icon": "icon-database",
+      "techs": [
+        {
+          "name": "SQLite",
+          "proficiency": "Simple Projects",
+          "experience": "Lightweight apps and data storage"
+        },
+        {
+          "name": "MariaDB",
+          "proficiency": "Home Lab",
+          "experience": "Database for self-hosted applications"
+        },
+        {
+          "name": "JSON",
+          "proficiency": "Data Format",
+          "experience": "API work and configuration files"
+        },
+        {
+          "name": "CSV",
+          "proficiency": "Data Analysis",
+          "experience": "Spreadsheet automation and imports"
+        }
+      ]
+    },
+    "cloud": {
+      "name": "Cloud & Hosting",
+      "color": "#feca57",
+      "icon": "icon-cloud",
+      "techs": [
+        {
+          "name": "AWS EC2",
+          "proficiency": "Experimenting",
+          "experience": "Free tier server experiments"
+        },
+        {
+          "name": "OVH VPS",
+          "proficiency": "Hosting",
+          "experience": "Affordable cloud server testing"
+        },
+        {
+          "name": "GitHub Pages",
+          "proficiency": "Static Hosting",
+          "experience": "Portfolio and project demos"
+        },
+        {
+          "name": "Cloudflare",
+          "proficiency": "DNS/CDN",
+          "experience": "Domain management and caching"
+        }
+      ]
+    },
+    "selfhosted": {
+      "name": "Self-Hosted Services",
+      "color": "#ff9ff3",
+      "icon": "icon-server",
+      "techs": [
+        {
+          "name": "Plex",
+          "proficiency": "Media Server",
+          "experience": "Personal streaming setup at home"
+        },
+        {
+          "name": "Jellyfin",
+          "proficiency": "Open Source",
+          "experience": "Alternative media server testing"
+        },
+        {
+          "name": "Pi-hole",
+          "proficiency": "Network Filter",
+          "experience": "Network-wide ad blocking"
+        },
+        {
+          "name": "Nextcloud",
+          "proficiency": "File Sync",
+          "experience": "Personal cloud storage solution"
+        }
+      ]
+    },
+    "hardware": {
+      "name": "Hardware & Electronics",
+      "color": "#54a0ff",
+      "icon": "icon-hardware",
+      "techs": [
+        {
+          "name": "Arduino",
+          "proficiency": "Weekend Projects",
+          "experience": "Basic sensors and LED experiments"
+        },
+        {
+          "name": "Raspberry Pi",
+          "proficiency": "Home Automation",
+          "experience": "Self-hosting and IoT projects"
+        },
+        {
+          "name": "PC Building",
+          "proficiency": "Enthusiast",
+          "experience": "Custom builds for gaming and servers"
+        },
+        {
+          "name": "Network Setup",
+          "proficiency": "Home Lab",
+          "experience": "Router configuration and VLANs"
+        }
+      ]
+    },
+    "tools": {
+      "name": "Development Tools",
+      "color": "#5f27cd",
+      "icon": "icon-devtools",
+      "techs": [
+        {
+          "name": "VS Code",
+          "proficiency": "Daily Editor",
+          "experience": "Primary code editor with extensions"
+        },
+        {
+          "name": "Terminal",
+          "proficiency": "Command Line",
+          "experience": "Daily workflow, multiple shell environments"
+        },
+        {
+          "name": "GitHub",
+          "proficiency": "Version Control",
+          "experience": "Repository management and collaboration"
+        },
+        {
+          "name": "Postman",
+          "proficiency": "API Testing",
+          "experience": "REST API development and testing"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,167 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .typewriter-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .typewriter-text {
+        font-size: 1.5rem;
+        min-width: 250px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+    
+    .tech-hexagon {
+        width: 100px;
+        height: 87px;
+    }
+    
+    .tech-name {
+        font-size: 0.8rem;
+    }
+    
+    .tech-filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+    
+    .tech-search input {
+        width: 250px;
+    }
+    
+    .about-section,
+    .tech-stack-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .typewriter-text {
+        font-size: 1.2rem;
+        min-width: 200px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    
+    .tech-hexagon {
+        width: 80px;
+        height: 70px;
+    }
+    
+    .tech-name {
+        font-size: 0.7rem;
+    }
+    
+    .tech-search input {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+    
+    .filter-btn {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-logo span {
+        font-size: 1.2rem;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-text h1 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .typewriter-text {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    /* Already optimized for dark mode */
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .cursor {
+        animation: none;
+    }
+}
+

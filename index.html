@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wiktor - Tech Enthusiast Portfolio</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/tech-stack.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <link rel="stylesheet" href="css/rom-mirror.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Glass Sidebar -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <nav class="glass-sidebar" id="glass-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <span class="logo-text">Wiktor</span>
+                    <span class="logo-subtitle">Tech Explorer</span>
+                </div>
+                <button class="sidebar-close" id="sidebar-close">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="sidebar-menu">
+                <a href="#hero" class="sidebar-link active" data-section="hero">
+                    <span class="link-icon icon-home"></span>
+                    <span class="link-text">Home</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#about" class="sidebar-link" data-section="about">
+                    <span class="link-icon icon-user"></span>
+                    <span class="link-text">About</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#toolkit" class="sidebar-link" data-section="toolkit">
+                    <span class="link-icon icon-tools"></span>
+                    <span class="link-text">Toolkit</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a
+                    href="#rom-mirror"
+                    class="sidebar-link"
+                    data-section="rom-mirror"
+                >
+                    <span class="link-icon icon-server"></span>
+                    <span class="link-text">ROM Mirror</span>
+                    <span class="link-glow"></span>
+                </a>
+                <a href="#contact" class="sidebar-link" data-section="contact">
+                    <span class="link-icon icon-mail"></span>
+                    <span class="link-text">Contact</span>
+                    <span class="link-glow"></span>
+                </a>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a
+                        href="https://github.com/overspend1"
+                        class="social-link"
+                        title="GitHub"
+                        target="_blank"
+                    >
+                        <span class="icon-github"></span>
+                    </a>
+                    <a
+                        href="https://t.me/overspend1"
+                        class="social-link"
+                        title="Telegram"
+                        target="_blank"
+                    >
+                        <span class="icon-telegram"></span>
+                    </a>
+                    <a
+                        href="mailto:wiktator.olszewski@gmail.com"
+                        class="social-link"
+                        title="Email"
+                    >
+                        <span class="icon-mail"></span>
+                    </a>
+                </div>
+                <div class="sidebar-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Always learning</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle" id="sidebar-toggle">
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+        </button>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="highlight">Wiktor</span></h1>
+                        <div class="typewriter-container">
+                            <span
+                                class="typewriter-text"
+                                id="typewriter"
+                            ></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-subtitle">
+                            Tech enthusiast who loves experimenting with
+                            different technologies after hours
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary"
+                                >Learn More</a
+                            >
+                            <a href="#contact" class="btn btn-secondary"
+                                >Get In Touch</a
+                            >
+                        </div>
+                    </div>
+                    <div class="hero-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                        <p class="section-subtitle">Hobbyist Tech Explorer</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="about-content">
+                            <div class="about-text">
+                                <p class="lead">
+                                    I'm someone who enjoys tinkering with
+                                    technology in my spare time. Whether it's
+                                    setting up a home server, experimenting with
+                                    different programming languages, or building
+                                    custom Android ROMs, I love exploring what's
+                                    possible with tech.
+                                </p>
+
+                                <p>
+                                    This portfolio showcases my after-hours
+                                    adventures in the tech world. I'm not
+                                    claiming to be an expert, but rather sharing
+                                    my journey of continuous learning and
+                                    experimentation across various technologies
+                                    that catch my interest.
+                                </p>
+
+                                <div class="competencies">
+                                    <h3>What I Like to Tinker With</h3>
+                                    <ul>
+                                        <li>
+                                            <strong>Web Technologies:</strong>
+                                            Building simple sites, learning
+                                            JavaScript and CSS
+                                        </li>
+                                        <li>
+                                            <strong>Self-Hosting:</strong>
+                                            Running Plex, Jellyfin, and other
+                                            services at home
+                                        </li>
+                                        <li>
+                                            <strong>System Tinkering:</strong>
+                                            Linux setups, automation scripts,
+                                            terminal customization
+                                        </li>
+                                        <li>
+                                            <strong>Mobile Modding:</strong>
+                                            Custom Android ROMs, trying
+                                            different kernels
+                                        </li>
+                                        <li>
+                                            <strong>Hardware Projects:</strong>
+                                            Basic Arduino experiments, PC
+                                            building
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="learning-note">
+                                    <p>
+                                        <em
+                                            >Always learning, always
+                                            experimenting. This portfolio itself
+                                            is a learning project!</em
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="toolkit" class="tech-stack-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Experimentation Toolkit</h2>
+                        <p class="section-subtitle">
+                            Technologies I've Been Playing Around With
+                        </p>
+                    </div>
+
+                    <div class="section-content">
+                        <div class="tech-controls">
+                            <div class="tech-search">
+                                <input
+                                    type="text"
+                                    id="tech-search"
+                                    placeholder="Search my toolkit..."
+                                />
+                            </div>
+                            <div class="tech-filters">
+                                <button
+                                    class="filter-btn active"
+                                    data-category="all"
+                                >
+                                    Everything
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="languages"
+                                >
+                                    Languages
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="systems"
+                                >
+                                    Systems
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="webtech"
+                                >
+                                    Web Tech
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="databases"
+                                >
+                                    Databases
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="cloud"
+                                >
+                                    Cloud
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="selfhosted"
+                                >
+                                    Self-Hosted
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="hardware"
+                                >
+                                    Hardware
+                                </button>
+                                <button
+                                    class="filter-btn"
+                                    data-category="tools"
+                                >
+                                    Dev Tools
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="tech-grid" id="tech-grid"></div>
+
+                        <div class="learning-note" style="margin-top: 3rem">
+                            <p>
+                                <em
+                                    >Click on any technology to learn more about
+                                    my experience with it!</em
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rom-mirror" class="rom-mirror-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>ROM Mirror</h2>
+                        <p class="section-subtitle">
+                            Custom Android ROMs & Files Repository
+                        </p>
+                    </div>
+
+                    <div class="section-content">
+                        <div class="rom-disclaimer">
+                            <p>
+                                <strong>Legal Notice:</strong> All files hosted
+                                here are for educational purposes. Users are
+                                responsible for ensuring they have proper rights
+                                to use these files. ROMs should only be used
+                                with devices you own.
+                            </p>
+                        </div>
+
+                        <div class="file-browser">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <button
+                                        class="view-toggle"
+                                        id="view-toggle"
+                                        title="Toggle View"
+                                    >
+                                        <span class="icon-grid"></span>
+                                    </button>
+                                    <button
+                                        class="upload-btn"
+                                        id="upload-btn"
+                                        title="Upload Files"
+                                    >
+                                        <span class="icon-upload"></span>
+                                        Upload
+                                    </button>
+                                </div>
+
+                                <div class="browser-search">
+                                    <input
+                                        type="text"
+                                        id="file-search"
+                                        placeholder="Search files..."
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="breadcrumb-nav" id="breadcrumb-nav">
+                                <span class="breadcrumb-item active"
+                                    >ROM Mirror</span
+                                >
+                            </div>
+
+                            <div class="file-grid" id="file-grid">
+                                <!-- Files will be populated by JavaScript -->
+                            </div>
+
+                            <div class="upload-area" id="upload-area">
+                                <div class="upload-content">
+                                    <span class="upload-icon icon-cloud"></span>
+                                    <h3>Drag & Drop Files Here</h3>
+                                    <p>or click to select files</p>
+                                    <input
+                                        type="file"
+                                        id="file-input"
+                                        multiple
+                                        hidden
+                                    />
+                                </div>
+                                <div
+                                    class="upload-progress"
+                                    id="upload-progress"
+                                >
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill"></div>
+                                    </div>
+                                    <span class="progress-text">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Let's Connect!</h2>
+                        <p class="section-subtitle">
+                            Always up for tech discussions
+                        </p>
+                    </div>
+                    <div class="section-content">
+                        <div class="contact-content">
+                            <div class="contact-info">
+                                <h3>Drop me a message</h3>
+                                <p>
+                                    Whether you want to share a cool project,
+                                    discuss a tech problem, or just chat about
+                                    the latest gadgets and software, feel free
+                                    to reach out!
+                                </p>
+                            </div>
+
+                            <div class="contact-buttons">
+                                <a
+                                    href="mailto:wiktator.olszewski@gmail.com"
+                                    class="contact-btn"
+                                    id="email-btn"
+                                >
+                                    <span class="contact-icon icon-mail"></span>
+                                    <div class="contact-text">
+                                        <span class="contact-label"
+                                            >Email me</span
+                                        >
+                                        <span class="contact-value"
+                                            >wiktator.olszewski@gmail.com</span
+                                        >
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="https://github.com/overspend1"
+                                    class="contact-btn"
+                                    id="github-btn"
+                                    target="_blank"
+                                >
+                                    <span
+                                        class="contact-icon icon-github"
+                                    ></span>
+                                    <div class="contact-text">
+                                        <span class="contact-label"
+                                            >Check my code</span
+                                        >
+                                        <span class="contact-value"
+                                            >github.com/overspend1</span
+                                        >
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="https://t.me/overspend1"
+                                    class="contact-btn"
+                                    id="telegram-btn"
+                                    target="_blank"
+                                >
+                                    <span
+                                        class="contact-icon icon-telegram"
+                                    ></span>
+                                    <div class="contact-text">
+                                        <span class="contact-label"
+                                            >Chat on Telegram</span
+                                        >
+                                        <span class="contact-value"
+                                            >t.me/overspend1</span
+                                        >
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Wiktor. Tech Enthusiast. Always Learning.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/typewriter.js"></script>
+        <script src="js/tech-stack.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/sidebar.js"></script>
+        <script src="js/contact-animations.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/rom-mirror.js"></script>
+    </body>
+</html>
